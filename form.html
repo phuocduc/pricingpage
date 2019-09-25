@@ -98,14 +98,14 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputCountry">Country</label>
-              <select id="inputCountry" class="form-control">
+              <select id="inputCountry" class="custom-select mr-sm-2">
                 <option selected>Choose...</option>
                 <option>...</option>
               </select>
             </div>
             <div class="form-group col-md-4">
               <label for="inputState">State</label>
-              <select id="inputState" class="form-control">
+              <select id="inputState" class="custom-select mr-sm-2">
                 <option selected>Choose...</option>
                 <option>...</option>
               </select>
@@ -132,50 +132,130 @@
           <h1 class="mb-3 mt-3">Payment</h1>
 
           <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                <label class="custom-control-label" for="customRadio1">Credit Card</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                <label class="custom-control-label" for="customRadio2">Debit Card</label>
-              </div>
-              <div class="custom-control custom-radio">
-                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio3">Paypal</label>
-                  </div>
+            <input
+              type="radio"
+              id="customRadio1"
+              name="customRadio"
+              class="custom-control-input"
+            />
+            <label class="custom-control-label" for="customRadio1"
+              >Credit Card</label
+            >
+          </div>
+          <div class="custom-control custom-radio">
+            <input
+              type="radio"
+              id="customRadio2"
+              name="customRadio"
+              class="custom-control-input"
+            />
+            <label class="custom-control-label" for="customRadio2"
+              >Debit Card</label
+            >
+          </div>
+          <div class="custom-control custom-radio">
+            <input
+              type="radio"
+              id="customRadio3"
+              name="customRadio"
+              class="custom-control-input"
+            />
+            <label class="custom-control-label" for="customRadio3"
+              >Paypal</label
+            >
+          </div>
 
+          <div class="form-row mt-5">
+            <div class="form-group col-md-6">
+              <label for="nameoncard">Name on card</label>
+              <input type="text" class="form-control" id="nameoncard" />
+              <h2>Full name as display on card</h2>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="creditcard">Credit card number</label>
+              <input type="text" class="form-control" id="creditcard" />
+            </div>
+          </div>
 
-                  <div class="form-row mt-5">
-                        <div class="form-group col-md-6">
-                          <label for="nameoncard">Name on card</label>
-                          <input type="text" class="form-control" id="nameoncard" />
-                          <h2>Full name as display on card</h2>
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="creditcard">Credit card number</label>
-                          <input type="text" class="form-control" id="creditcard" />
-                        </div>
-                      </div>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="nameoncard">Name on card</label>
+              <input type="text" class="form-control" id="nameoncard" />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="creditcard">Credit card number</label>
+              <input type="text" class="form-control" id="creditcard" />
+            </div>
+            <div class="form-group col-md-6"></div>
+          </div>
 
-                      <div class="form-row">
-                            <div class="form-group col-md-3">
-                              <label for="nameoncard">Name on card</label>
-                              <input type="text" class="form-control" id="nameoncard" />
-                            </div>
-                            <div class="form-group col-md-3">
-                              <label for="creditcard">Credit card number</label>
-                              <input type="text" class="form-control" id="creditcard" />
-                            </div>
-                            <div class="form-group col-md-6">
-                                   
-                                  </div>
-                          </div>
-
-          <button type="submit" class="btn btn-danger btn-block">Continue to checkout</button>
+          <button type="submit" class="btn btn-danger btn-block">
+            Continue to checkout
+          </button>
         </form>
+        <div class="col-5 sm-5 md-5">
+          <h3 class="mb-4">Your cart</h3>
+          <div class="card" style="width: 28rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item ur-card">
+                <div class="first_line">
+                  <h5>Product name</h5>
+                  <span>4.9M</span>
+                </div>
+                <div class="second_line">Web Design Bootcamp</div>
+              </li>
+              <li class="list-group-item ur-card">
+                <div class="first_line">
+                  <h5>Second Product</h5>
+                  <span>14.9M</span>
+                </div>
+                <div class="second_line">React + React Native</div>
+              </li>
+              <li class="list-group-item ur-card">
+                <div class="first_line">
+                  <h5>Third item</h5>
+                  <span>14.9M</span>
+                </div>
+                <div class="second_line">Machine Learning</div>
+              </li>
+              <li class="list-group-item ur-card">
+                <div class="first_line">
+                  <h5>Promo code</h5>
+                  <span>-7.5M</span>
+                </div>
+                <div class="second_line">EXAMPLECODE</div>
+              </li>
+              <li class="list-group-item ur-card">
+                <div class="first_line">
+                  <h5>Total (VND)</h5>
+                  <span><b>27.2M</b></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="input-group mt-5">
+              <input type="text" class="form-control" placeholder="Promo code" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="Redeem" id="basic-addon2">Redeem</span>
+              </div>
+            </div>
+
+        </div>
       </div>
     </div>
 
+    <footer class="text-center mt-5">
+      <div>
+        <h1>&copy; 2018-2019 Coderschool.vn</h1>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Support</a></li>
+          
+        </ul>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
